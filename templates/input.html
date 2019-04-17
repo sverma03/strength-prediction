@@ -1,0 +1,86 @@
+<html>
+	<head>
+		<style>
+			html, body, p, th, td, li, dd, dt {
+			 font: 1em Arial, Helvetica, sans-serif;
+			 margin-left:30px;
+			}
+		</style>
+		<title>Concrete Strenght Predictor</title>
+	</head>
+
+	<body>
+		<h2 style="color:blue;margin-left:30px;">Concrete Strength Predictor - Input Form</h3>
+		<div>
+			<form action="/predict" method="POST">
+				<table>
+					<tr> 
+						<td><label for="cement">Cement</label></td>
+						<td><input type="text" id="cement" name="cement"></td>
+						<td><label>Kg/Cu.M (Range: 100 - 550)</label></td>
+					</tr>
+					
+					<tr> 
+						<td><label for="blast">Blast</label></td>
+						<td><input type="text" id="blast" name="blast"></td>
+						<td><label>Kg/Cu.M (Range: 0 - 360)</label></td>
+					</tr>
+					
+					<tr> 
+						<td><label for="flyash">Fly Ash</label></td>
+						<td><input type="text" id="flyash" name="flyash"></td>
+						<td><label>Kg/Cu.M (Range: 0 - 200)</label></td>
+					</tr>
+					
+					<tr> 
+						<td><label for="water">Water</label></td>
+						<td><input type="text" id="water" name="water"></td>
+						<td><label>Kg/Cu.M (Range: 120 - 250)</label></td>
+					</tr>
+					
+					<tr> 
+						<td><label for="superplasticizer">Super Plasticizer</label></td>
+						<td><input type="text" id="superplasticizer" name="superplasticizer"></td>
+						<td><label>Kg/Cu.M (Range: 0 - 32)</label></td>
+					</tr>
+					
+					<tr> 
+						<td><label for="coarse_aggregate">Coarse Aggregate</label></td>
+						<td><input type="text" id="coarse_aggregate" name="coarse_aggregate"></td>
+						<td><label>Kg/Cu.M (Range: 801 - 1145)</label></td>
+					</tr>
+					
+					<tr> 
+						<td><label for="fine_aggregate">Fine Aggregate</label></td>
+						<td><input type="text" id="fine_aggregate" name="fine_aggregate"></td>
+						<td><label>Kg/Cu.M (Range: 594 - 993)</label></td>
+					</tr>
+					
+					<tr> 
+						<td><label for="age">Age</label></td>
+						<td><select id="age" name="age">
+							  <option value="1">1</option>
+							  <option value="3">3</option>
+							  <option value="7">7</option>
+							  <option value="14">14</option>
+							  <option value="28">28</option>
+							  <option value="56">56</option>
+							  <option value="90">90</option>
+							  <option value="91">91</option>
+							  <option value="100">100</option>
+							  <option value="120">120</option>
+							  <option value="180">180</option>
+							  <option value="270">270</option>
+							  <option value="360">360</option>
+							  <option value="365">365</option>
+							</select>
+						</td>
+						<td>Days</td>
+					</tr>
+					<tr><td></td><td>&nbsp;</td><td></td></tr>
+					<tr><td></td><td><button type="reset" value="Reset">Reset</button> <input type="submit" value="Submit"></td><td></td></tr>
+				</table>
+			</form>
+		</div>
+	</body>
+</html>
